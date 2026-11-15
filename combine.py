@@ -5,7 +5,7 @@ EXTERNAL_M3U_3 = "https://raw.githubusercontent.com/princematthewpesigan9-ctrl/m
 EXTERNAL_M3U_4 = "https://raw.githubusercontent.com/Zer0Spce/ZeroStreams/main/playlist.m3u"
 
 LOCAL_M3U = "my_channels.m3u"
-OUTPUT_M3U = "combined.m3u"
+OUTPUT_M3U = "ESCFNL.m3u"
 
 
 def download(url):
