@@ -1,0 +1,50 @@
+import urllib.request
+
+EXTERNAL_M3U_1 = "https://raw.githubusercontent.com/ryansnetcafe/ott-playlist/refs/heads/main/ryansnetcafe.m3u"
+EXTERNAL_M3U_3 = "https://raw.githubusercontent.com/princematthewpesigan9-ctrl/matt-tv-playlist/refs/heads/main/matttv_playlist_update_2026-09-19.m3u"
+EXTERNAL_M3U_4 = "https://raw.githubusercontent.com/Zer0Spce/ZeroStreams/main/playlist.m3u"
+
+LOCAL_M3U = "my_channels.m3u"
+OUTPUT_M3U = "combined.m3u"
+
+
+def download(url):
+    req = urllib.request.Request(
+        url,
+        headers={"User-Agent": "Mozilla/5.0"}
+    )
+    with urllib.request.urlopen(req, timeout=30) as response:
+        return response.read().decode("utf-8", errors="ignore")
+
+
+def clean_playlist(playlist):
+    return playlist.replace("#EXTM3U", "", 1).strip()
+
+
+local = open(LOCAL_M3U, "r", encoding="utf-8").read()
+
+external_1 = download(EXTERNAL_M3U_1)
+
+external_3 = download(EXTERNAL_M3U_3)
+external_4 = download(EXTERNAL_M3U_4)
+
+external_1 = clean_playlist(external_1)
+
+external_3 = clean_playlist(external_3)
+external_4 = clean_playlist(external_4)
+
+combined = (
+    local.rstrip()
+    + "\n"
+    + external_1
+    + "\n"
+    
+    + external_3
+    + "\n"
+    + external_4
+    + "\n"
+)
+
+open(OUTPUT_M3U, "w", encoding="utf-8").write(combined)
+
+print("Playlist updated successfully.")
