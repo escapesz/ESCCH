@@ -45,6 +45,6 @@ combined = (
     + "\n"
 )
 
-open(OUTPUT_M3U, "w", encoding="utf-8").write(combined)
+open(OUTPUT_M3U, "w", encoding="utf-8").write(ESCFNL)
 
 print("Playlist updated successfully.")
