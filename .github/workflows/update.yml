@@ -1,4 +1,4 @@
-name: Update Combined M3U
+name: Update ESCFNL M3U
 
 on:
   workflow_dispatch:
@@ -39,7 +39,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes detected."
           else
-            git commit -m "Update combined playlist"
+            git commit -m "Update ESCFNL playlist"
             git pull --rebase origin main
             git push origin main
           fi
