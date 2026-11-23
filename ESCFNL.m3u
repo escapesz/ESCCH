@@ -39,12 +39,6 @@ http://181.78.61.202:8000/play/a02a
 #KODIPROP:inputstream.adaptive.license_key=99f2d8b38451875101393cfda6cc5e77:3d32bdfa5fe52cf74567eb20716b5a65
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3akahygf9y/out/v1/cc0ca029222b46b3a36e610e0a85fe91/cenc.mpd
 
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="ENT", PBB Collab 3.0 Extra
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=b75e0a8315d0499b834c00a3d5b91935:39876c3c4f32a11dee56078febbb67dd
-https://absp-live.akamaized.net/dash/live/2099522/pbbcollaballaccesslivestream/manifest.mpd?hdntl=exp=1795501794~acl=%2f*~id=5fe6347a-2c8b-4f3d-beb6-93353d406ffa~data=hdntl~hmac=1dc8835e2e8ce7a13ac660685dfc3d98b0440be1a953fccd47a44a32f3c3eead&app_bundle=&app_name=iwant&app_store_url=&channel_name=PBBCollab30Extra&conparid=09f9149f-acaa-42ca-a18f-5e2735f5de6a&contentType=Live&content_id=09f9149f-acaa-42ca-a18f-5e2735f5de6a&content_livestream=1&content_producer_name=ABS-CBN&coppa=0&did=c08a7506-e3ef-57a6-9538-ed5c78e840d7&dnt=0&dur=50400&gdpr=0&gdpr_consent=0&genre=Reality&ifa_type=PPID&language=fil&lmt=0&network_name=ABS-CBN&pmxd=%7B%7BPOD_MAX_DUR_MILLIS%7D%7D&rating=PG&sid=5fe6347a-2c8b-4f3d-beb6-93353d406ffa&title=PBBCollab30Extra&ua=AmazonAPIGateway_ksrhkmmqge&url=https%3A%2F%2Fwww.iwanttfc.com%2Fcontent%2F09f9149f-acaa-42ca-a18f-5e2735f5de6a&us_privacy=1---&sentinel=awaked
-
 #EXTINF:-1 tvg-logo="" group-title="MOVIES",  CINEMAX ASIA HD
 http://202.150.165.66:8088/play/104-Cinemax/index.m3u8
 
